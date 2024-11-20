@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бесконечное лето</title>
+    <meta name="description"
+        content="Окунитесь в мир ужасов! В нашем Бункере страха  вы найдете огромную коллекцию фильмов ужасов: от классики до новинок.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css/all.css">
+    <link rel="icon" href="img/favicon-512.png" type="image/x-icon">
+</head>
+
+<body>
+<header>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Логотип" width="300" height="auto">
+                </a>
+            </div>
+            
+    <nav>
+        <ul class="nav-menu">
+            <li class="desktop-hide"><a href="index.html">Главная</a></li>
+            <li><a href="novelty.html">Новинки</a></li>
+            <li><a href="selections.html">Подборки</a></li>
+            <li><a href="review.html">Рецензии</a></li>
+            <li><a href="history.html">Хроники</a></li>
+        </ul>
+    </nav>
+            
+            <div class="search-container">
+                <form>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Искать здесь..." id="search-input">
+                        <span class="clear-btn" id="clear-btn" onclick="clearInput()">&times;</span>
+                    </div>
+                    <button type="submit" title="Поиск"></button>
+                    <button type="button" class="filter-btn filter" title="Фильтр"></button>
+                </form>
+                <!-- модальное окно для фильтрации -->
+                <div id="movie-filter-modal" class="modal-content-filter" style="display: none;">
+                    <span class="close-modal" id="close-filter">&times;</span>
+                    <h2>Расширенный поиск</h2>
+                    <form class="movie-filter">
+                        <div class="form-group">
+                            <label for="country">Страна:</label>
+                            <select id="country" name="country">
+                                <option value="">Все</option>
+                                <option value="США">США</option>
+                                <option value="Япония">Япония</option>
+                                <option value="Россия">Россия</option>
+                                <option value="Китай">Китай</option>
+                                <option value="Сингапур">Сингапур</option>
+                                <option value="Австралия">Австралия</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Год:</label>
+                            <input type="number" id="year" name="year" min="1900" max="2024">
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="rating">Рейтинг:</label>
+                            <input type="number" id="rating" name="rating" min="1" max="10">
+                        </div>
+            
+                        <button class="btn" type="submit">Применить</button>
+                    </form>
+                </div>
+            </div>
+            
+            <button id="login-btn" class="login-btn"><span id="loginText" class="login-text">Войти</span></button>
+            <!-- <span id="loginOpen">Войти</span> -->
+            
+            
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="novelty.html">Новинки</a></li>
+                <li><a href="selections.html">Подборки</a></li>
+                <li><a href="review.html">Рецензии</a></li>
+                <li><a href="history.html">Хроники</a></li>
+            </ul>
+        </nav>
+</header>
+    <main>
+            <!-- <div class="main-content"> -->
+                
+        <section class="movie-details">
+            <div class="movie-header">
+            <h1>БЕСКОНЕЧНОЕ ЛЕТО</h1>
+              <p>Рай обернулся ловушкой. Сможет ли он найти выход, пока не стало слишком поздно?</p>
+              <!-- на этой картинке название -->
+                <img src="img/poster/name1.jpg" alt="Название фильма" class="large-image">
+                <div class="movie-info">  
+                    <h2>О фильме</h2>
+                    <p><strong>Описание:</strong> Петр, молодой музыкант, переживает не лучшие времена. Творческий кризис, ссоры с близкими, неудачи на каждом шагу – всё
+                    это толкает его на отчаянный поступок. В результате несчастного случая он оказывается на пороге смерти.
+                    
+                    Но вместо мрака и пустоты Петр попадает в удивительное место – залитую солнцем деревню, где время словно остановилось.
+                    Здесь живут его бабушки, Маша и Катя, которые умерли много лет назад. Бабушка Маша рада внуку, которому на удивление снова 7 лет, при этом сознание у него прожившего 30-летнюю жизнь Петра, окружая его заботой и
+                    любовью. Бабушка Катя, напротив, холодна и замкнута, предупреждая Петра об опасности, которая таится в этом райском
+                    уголке.
+                    
+                    Дни сменяются неделями, недели – месяцами, а Петр все так же молод и полон сил. Он наслаждается жизнью в этой
+                    безмятежной идиллии, пока не нарушает главный запрет – срывает ягоды с древнего дерева, растущего в глубине леса.
+                    
+                    С этого момента рай начинает рушиться. Время, застывшее в этом месте, пробуждается, грозя увлечь Петра в пучину
+                    прошлого, стирая его из реальности. Он понимает, что должен найти способ все исправить и вернуться в свой мир, пока не
+                    стало слишком поздно.
+                    
+                    «Бесконечное лето» – это не просто история о втором шансе, это история о поиске себя, о прощении и о том, что даже в
+                    самом прекрасном раю может скрываться ловушка. </p>
+                    <p><strong>Страна:</strong> Россия</p>
+                    <p><strong>Год выпуска:</strong> 2023</p>
+                    <p><strong>Жанр:</strong> Ужасы</p>
+                    <p><strong>Продолжительность:</strong> 1 час 30 минут</p>
+            <p><strong>Режисер: </strong>Анна Меликян («Русалка», «Звезда»)</p>
+            <p><strong>Сценарий: </strong>Илья Демин</p>
+            <p><strong>Продюссер: </strong>Борис Пошлитак</p>
+            <p><strong>Оператор: </strong>Дмитрий Смирнов</p>
+            <p><strong>Актеры:</strong>
+                Иван Янковский (Петя),
+                Ирина Алферова (бабушка Маша),
+                Анна Меликян (бабушка Катя)
+            </p>
+                    <p><strong>Возрастное ограничение:</strong> 18+</p>
+                    <p><strong>Рейтинг MPAA:</strong> R</p>
+                    <p><strong>Рейтинг КиноПоиска:</strong> 6.8</p>
+                    <p><strong>Рейтинг сайта БУНКЕР СТРАХА:</strong> 8.5</p>
+                </div>
+    <!-- Оценка -->
+     <h3>Ваш рейтинг</h3>
+<div class="rating-block">
+    <ul class="rating">
+        <li>
+            <button title="1" class="rate_number_1" aria-label="Оценка 1">1</button>
+        </li>
+        <li>
+            <button title="2" class="rate_number_2" aria-label="Оценка 2">2</button>
+        </li>
+        <li>
+            <button title="3" class="rate_number_3" aria-label="Оценка 3">3</button>
+        </li>
+        <li>
+            <button title="4" class="rate_number_4" aria-label="Оценка 4">4</button>
+        </li>
+        <li>
+            <button title="5" class="rate_number_5" aria-label="Оценка 5">5</button>
+        </li>
+    
+        <li>
+            <button title="7" class="rate_number_7" aria-label="Оценка 7">7</button>
+        </li>
+        <li>
+            <button title="8" class="rate_number_8" aria-label="Оценка 8">8</button>
+        </li>
+        <li>
+            <button title="8" class="rate_number_8" aria-label="Оценка 8">9</button>
+        </li>
+        <li>
+            <button title="8" class="rate_number_8" aria-label="Оценка 8">10</button>
+        </li>    
+        <!-- <li>
+            <button title="Отменить оценку" class="rate_number_6" aria-label="Отменить оценку">✖️</button>
+        </li> -->
+    </ul>
+</div>
+<!-- конец оценки -->
+
+            </div>
+        
+   
+      <!-- <h3>Постер фильма</h3> -->
+            <div class="poster-section">
+              
+                <div class="poster-wrapper">
+                    <img src="img/test7.png" alt="Постер фильма" class="poster" onmouseover="showSlideshow()"
+                        onmouseout="hideSlideshow()">
+                </div>
+
+                <h2>Фильмы, похожие на Бесконечное лето</h2>
+                <!-- Слайд -->
+        <div class="slideshow-container">
+            <div class="movie-slide fade">
+                <div class="movie-card">
+                    <a href="movie1.html">
+                        <img src="img/test2.jpeg" alt="Название фильма 2">
+                        <h3>Два, три, демон, прийди!</h3>
+                        <p>Страна: Германия</p>
+                        <p>Год: 2022</p>
+                        <p>Рейтинг: 9.0</p>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="movie-slide fade">
+                <div class="movie-card">
+                    <a href="movie-details.html">
+                        <img src="img/test1.jpeg" alt="Название фильма 1">
+                        <h3>Другой фильм</h3>
+                        <p>Страна: США</p>
+                        <p>Год: 2023</p>
+                        <p>Рейтинг: 8.5</p>
+                    </a>
+                </div>
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+            </div>
+        </section>
+   
+        <section class="comments-section">
+            <h3>Рецензии зрителей</h3>
+            <div class="comment-form">
+             
+                <form>
+                    <label for="commentAuthor">Ваше имя:</label>
+                    <input type="text" id="commentAuthor" name="commentAuthor" required>
+                    <label for="commentText">Ваша рецензия:</label>
+                    <textarea id="commentText" name="commentText" required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+    
+            <div class="comments-list">
+                <div class="comment">
+                    <p><strong>Пользователь 1</strong> <span class="comment-time"> 1 час назад</span></p>
+                    <p>Отличный фильм! Я его обожаю! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque reprehenderit nam natus dolore, ducimus architecto non! Provident pariatur excepturi atque et officia consectetur, delectus est nesciunt perspiciatis earum repellendus.</p>
+                    <button class="reply">Ответить</button>
+                </div>
+    
+            <div class="comments-list">
+                <div class="comment">
+                    <p><strong>Пользователь 1</strong> <span class="comment-time"> 1 час назад</span></p>
+                    <p>Отличный фильм! Я его обожаю! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque reprehenderit nam natus dolore, ducimus architecto non! Provident pariatur excepturi atque et officia consectetur, delectus est nesciunt perspiciatis earum repellendus.</p>
+                    <button class="reply">Ответить</button>
+                </div>
+    
+            </div>
+        </section>
+   
+        </div>   
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="developer-info">
+                <p><a href="#">Backend: [Имя программиста]</a></p>
+    
+            </div>
+            <div class="designer-info">
+                <p><a href="#">Frontend: Денис Кузнецов</a></p>
+    
+            </div>
+        </div>
+    </footer>
+
+<script src="js/script.js"></script>
+   <script src="js/slide.js"></script>
+    </body>
+
+</html>

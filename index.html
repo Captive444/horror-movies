@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БУНКЕР СТРАХА</title>
+    <meta name="description"
+        content="Окунитесь в мир ужасов! В нашем Бункере страха  вы найдете огромную коллекцию фильмов ужасов: от классики до новинок.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon-512.png" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="css/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+
+<body>
+    <header>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+            <img src="img/logo.png" alt="Логотип" width="300" height="auto">
+        </a>
+            </div>
+            
+<nav>
+    <ul class="nav-menu">
+        <li class="desktop-hide"><a href="index.html" class="active">Главная</a></li>
+        <li><a href="novelty.html">Новинки</a></li>
+        <li><a href="selections.html">Подборки</a></li>
+        <li><a href="review.html">Рецензии</a></li>
+        <li><a href="history.html">Хроники</a></li>
+    </ul>
+</nav>
+
+    <div class="search-container">
+<form> 
+    <div class="input-wrapper">
+    <input type="text" placeholder="Искать здесь..." id="search-input">
+<span class="clear-btn" id="clear-btn" onclick="clearInput()">&times;</span>
+    </div>
+    <button type="submit" title="Поиск"></button>
+     <button type="button" class="filter-btn filter" title="Фильтр"></button>
+</form>
+<!-- модальное окно для фильтрации -->
+<div id="movie-filter-modal" class="modal-content-filter" style="display: none;">
+    <span class="close-modal" id="close-filter">&times;</span>
+    <h2>Расширенный поиск</h2>
+    <form class="movie-filter">
+        <div class="form-group">
+            <label for="country">Страна:</label>
+            <select id="country" name="country">
+                <option value="">Все</option>
+                <option value="США">США</option>
+                <option value="Япония">Япония</option>
+                <option value="Россия">Россия</option>
+                <option value="Китай">Китай</option>
+                <option value="Сингапур">Сингапур</option>
+                <option value="Австралия">Австралия</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="year">Год:</label>
+            <input type="number" id="year" name="year" min="1900" max="2024">
+        </div>
+
+        <div class="form-group">
+            <label for="rating">Рейтинг:</label>
+            <input type="number" id="rating" name="rating" min="1" max="10">
+        </div>
+
+        <button class="btn" type="submit">Применить</button>
+    </form>
+</div>
+    </div>
+ 
+         <button id="login-btn" class="login-btn"><span id="loginText" class="login-text">Войти</span></button>
+                <!-- <span id="loginOpen">Войти</span> -->
+        
+     
+        <nav id="navbar" class="navbar">
+            <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="novelty.html">Новинки</a></li>
+        <li><a href="selections.html">Подборки</a></li>
+        <li><a href="review.html">Рецензии</a></li>
+        <li><a href="history.html">Хроники</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <div class="main-content">
+            <h1>БУНКЕР СТРАХА</h1>
+            <p>Окунитесь в мир ужасов! В нашем бункере страха вы найдете огромную коллекцию фильмов ужасов: от классики до
+            новинок.
+            Здесь вы ознакомитель со свежими рецензиями от зрителей, у нас каждый может поделиться своим мнением о любимом
+            (или не очень)
+            фильме.
+            Также вы узнаете о последних новостях из мира ужасов. Зарегистрируйтесь, чтобы оставлять свои
+            комментарии к любимому фильму! Лучшие рецензии будут опубликованы в специальном разделе "Рецензии".</p>
+        </div>
+
+
+            <div class="grid">
+                <!-- Пример карточек фильмов,  -->
+                <div class="movie-card">
+                    <a href="movie-details.html" class="movie-link">
+                        <img src="img/test4.png" alt="Название фильма">
+                        <h3>Зеленая смерть</h3>
+                        <p>Страна: Россия</p>
+                        <p>Год: 1992</p>
+                        <p>Рейтинг: 7.3</p>
+                    </a>
+                </div>
+
+                <div class="movie-card">
+                    <a href="movie-details.html">
+                        <img src="img/test2.jpeg" alt="Название фильма 2">
+                        <h3>Два, три, демон, прийди!</h3>
+                        <p>Страна: Германия</p>
+                        <p>Год: 2022</p>
+                        <p>Рейтинг: 9.0</p>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="movie-details.html">
+                        <img src="img/test6.png" alt="Название фильма 2">
+                        <h3>В паутине</h3>
+                        <p>Страна: Япония</p>
+                        <p>Год: 2022</p>
+                        <p>Рейтинг: 9.0</p>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="movie1.html">
+                        <img src="img/test7.png" alt="Название фильма 2">
+                        <h3>Бесконечное лето</h3>
+                        <p>Страна: Россия</p>
+                        <p>Год: 2024</p>
+                        <p>Рейтинг: 9.0</p>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="movie-details.html">
+                        <img src="path/to/image2.jpg" alt="Название фильма 2">
+                        <h3>Название фильма 5</h3>
+                        <p>Страна: Япония</p>
+                        <p>Год: 2022</p>
+                        <p>Рейтинг: 9.0</p>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="movie-details.html">
+                        <img src="path/to/image2.jpg" alt="Название фильма 2">
+                        <h3>Название фильма 6</h3>
+                        <p>Страна: Япония</p>
+                        <p>Год: 2022</p>
+                        <p>Рейтинг: 9.0</p>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="movie-details.html">
+                        <img src="path/to/image2.jpg" alt="Название фильма 2">
+                        <h3>Название фильма 7</h3>
+                        <p>Страна: Япония</p>
+                        <p>Год: 2022</p>
+                        <p>Рейтинг: 9.0</p>
+                    </a>
+                </div>
+                <div class="movie-card">
+                    <a href="movie-details.html">
+                        <img src="path/to/image2.jpg" alt="Название фильма 2">
+                        <h3>Название фильма 8</h3>
+                        <p>Страна: Япония</p>
+                        <p>Год: 2022</p>
+                        <p>Рейтинг: 9.0</p>
+                    </a>
+                </div>
+                <!-- Добавить здесь другие карточки фильмов по аналогии -->
+            </div>
+        </section>
+
+        <section class="pagination">
+            <ul>
+                <li><a href="#">&lt;</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&gt;</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    
+    
+    <footer>
+<div class="footer-content">
+    <div class="developer-info">
+        <p><a href="#">Backend: [Имя программиста]</a></p>
+
+    </div>
+    <div class="designer-info">
+        <p><a href="#">Frontend: Денис Кузнецов</a></p>
+
+    </div>
+</div>
+    </footer>
+
+   <!-- модальное окно для входа -->
+
+<div id="login-modal" class="modal">
+    
+        <div class="modal-content">
+            <span class="close" id="close-login">&times;</span>
+            <h2>Вход</h2>
+            <form>
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username"  required>
+    
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="submit">ВОЙТИ</button>
+                <p>Нет аккаунта? <a href="#!" id="register-open" >Зарегистрируйтесь</a></p>
+            </form>
+        </div>
+
+
+        
+    </div>
+
+    <!-- модальное окно для регистрации -->
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content-register">
+            <span class="close" id="close-register">&times;</span>
+            <h2>Регистрация</h2>
+            <form>
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <label for="confirm-password">Подтвердите пароль:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+    
+                <button type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                <!-- <p>Уже есть аккаунт? <a href="#!" id="loginOpen">Войдите</a></p> -->
+            </form>
+        </div>
+    </div>
+
+    <!-- модальное окно для фильтрации -->
+        <div id="movie-filter-modal" class="modal-content-filter" style="display: none;">
+            <span class="close-modal" id="close-filter">&times;</span>
+            <h2>Расширенный поиск</h2>
+            <form class="movie-filter">
+                <div class="form-group">
+                    <label for="country">Страна:</label>
+                    <select id="country" name="country">
+                        <option value="">Все</option>
+                        <option value="США">США</option>
+                        <option value="Япония">Япония</option>
+                        <option value="Россия">Россия</option>
+                        <option value="Китай">Китай</option>
+                        <option value="Сингапур">Сингапур</option>
+                        <option value="Австралия">Австралия</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="year">Год:</label>
+                    <input type="number" id="year" name="year" min="1900" max="2024">
+                </div>
+        
+                <div class="form-group">
+                    <label for="rating">Рейтинг:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="10">
+                </div>
+        
+                <button class="btn" type="submit">Применить</button>
+            </form>
+        </div>
+
+    <script src="js/script.js"></script>
+    
+  
+</body>
+
+</html>

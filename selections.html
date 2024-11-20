@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подборки фильмов</title>
+    <meta name="description"
+        content="Окунитесь в мир ужасов! В нашем Бункере страха  вы найдете огромную коллекцию фильмов ужасов: от классики до новинок.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon-512.png" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="css/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+
+<body>
+    <header>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Логотип" width="300" height="auto">
+            </a>
+        </div>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li class="desktop-hide"><a href="index.html">Главная</a></li>
+                    <li><a href="novelty.html">Новинки</a></li>
+                    <li><a href="selections.html">Подборки</a></li>
+                    <li><a href="review.html">Рецензии</a></li>
+                    <li><a href="history.html">Хроники</a></li>
+                </ul>
+            </nav>
+
+        <div class="search-container">
+            <form>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Искать здесь..." id="search-input">
+                    <span class="clear-btn" id="clear-btn" onclick="clearInput()">&times;</span>
+                </div>
+                <button type="submit" title="Поиск"></button>
+                <button type="button" class="filter-btn filter" title="Фильтр"></button>
+            </form>
+            <!-- модальное окно для фильтрации -->
+            <div id="movie-filter-modal" class="modal-content-filter" style="display: none;">
+                <span class="close-modal" id="close-filter">&times;</span>
+                <h2>Расширенный поиск</h2>
+                <form class="movie-filter">
+                    <div class="form-group">
+                        <label for="country">Страна:</label>
+                        <select id="country" name="country">
+                            <option value="">Все</option>
+                            <option value="США">США</option>
+                            <option value="Япония">Япония</option>
+                            <option value="Россия">Россия</option>
+                            <option value="Китай">Китай</option>
+                            <option value="Сингапур">Сингапур</option>
+                            <option value="Австралия">Австралия</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Год:</label>
+                        <input type="number" id="year" name="year" min="1900" max="2024">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Рейтинг:</label>
+                        <input type="number" id="rating" name="rating" min="1" max="10">
+                    </div>
+
+                    <button class="btn" type="submit">Применить</button>
+                </form>
+            </div>
+        </div>
+
+        <button id="login-btn" class="login-btn"><span id="loginText" class="login-text">Войти</span></button>
+        <!-- <span id="loginOpen">Войти</span> -->
+
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="novelty.html">Новинки</a></li>
+                <li><a href="selections.html">Подборки</a></li>
+                <li><a href="review.html">Рецензии</a></li>
+                <li><a href="history.html">Хроники</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <div class="main-content">
+        <!-- <div class="reviews-container"> -->
+        <h1>Подборки фильмов</h1>
+        <div class="reviews-grid">
+            <div class="selections-card">
+                <a href="#select-1">
+                        <img src="img/page/test1111.jpg" alt="poster">
+                    <div class="review-content">
+                        <h4>«Сумерки» и еще пять осенних фильмов про вампиров</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="selections-card">
+                <a href="#select-2">
+                        <img src="img/page/test4444.jpeg" alt="poster">
+                    <div class="review-content">
+                        <h4>Семерка крутых научно-фантастических фильмов, которым нужно продолжение</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="selections-card">
+                <a href="#select-2">
+                        <img src="img/page/test3333.jpeg" alt="poster">
+                    <div class="review-content">
+                        <h4>«Восмерка знаменитых фильмов ужасов, которым срочно нужен сиквел</h4>
+                    </div>
+                </a>
+            </div>
+    
+    
+
+        </div>
+        <!-- </div> -->
+    
+    
+        <section class="pagination">
+            <ul>
+                <li><a href="#">&lt;</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&gt;</a></li>
+            </ul>
+        </section>
+    
+    
+    </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="developer-info">
+                <p><a href="#">Backend: [Имя программиста]</a></p>
+
+            </div>
+            <div class="designer-info">
+                <p><a href="#">Frontend: Денис Кузнецов</a></p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

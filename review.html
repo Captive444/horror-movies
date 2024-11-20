@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецензии</title>
+    <meta name="description"
+        content="Окунитесь в мир ужасов! В нашем Бункере страха  вы найдете огромную коллекцию фильмов ужасов: от классики до новинок.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon-512.png" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="css/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+
+<body>
+    <header>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Логотип" width="300" height="auto">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="nav-menu">
+                <li class="desktop-hide"><a href="index.html">Главная</a></li>
+        <li><a href="novelty.html">Новинки</a></li>
+        <li><a href="selections.html">Подборки</a></li>
+        <li><a href="review.html">Рецензии</a></li>
+        <li><a href="history.html">Хроники</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <form>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Искать здесь..." id="search-input">
+                    <span class="clear-btn" id="clear-btn" onclick="clearInput()">&times;</span>
+                </div>
+                <button type="submit" class="search-btn" title="Поиск"></button>
+                <button type="button" class="filter-btn filter" title="Фильтр"></button>
+            </form>
+    
+            <!-- модальное окно для фильтрации -->
+            <div id="movie-filter-modal" class="modal-content-filter" style="display: none;">
+                <span class="close-modal" id="close-filter">&times;</span>
+                <h2>Расширенный поиск</h2>
+                <form class="movie-filter">
+                    <div class="form-group">
+                        <label for="country">Страна:</label>
+                        <select id="country" name="country">
+                            <option value="">Все</option>
+                            <option value="США">США</option>
+                            <option value="Япония">Япония</option>
+                            <option value="Россия">Россия</option>
+                            <option value="Китай">Китай</option>
+                            <option value="Сингапур">Сингапур</option>
+                            <option value="Австралия">Австралия</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Год:</label>
+                        <input type="number" id="year" name="year" min="1900" max="2024">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Рейтинг:</label>
+                        <input type="number" id="rating" name="rating" min="1" max="10">
+                    </div>
+
+                    <button class="btn" type="submit">Применить</button>
+                </form>
+            </div>
+        </div>
+
+        <button id="login-btn" class="login-btn"><span id="loginText" class="login-text">Войти</span></button>
+        <!-- <span id="loginOpen">Войти</span> -->
+
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="novelty.html">Новинки</a></li>
+            <li><a href="selections.html">Подборки</a></li>
+            <li><a href="review.html">Рецензии</a></li>
+            <li><a href="history.html">Хроники</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+<div class="main-content">
+    <!-- <div class="reviews-container"> -->
+        <h2>Рецензии зрителей</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <a href="#profile-1">
+                    <div class="user-info">
+                        <img src="img/page/avatar/test211.jpg" alt="Аватар пользователя 1">
+                        <div class="name-user">
+                            <h4>Наталья Иванова</h4>
+                            <p>Количество рецензий: <span>34</span></p>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h5>Рецензия на фильм: <span>Бесконечное лето</span></h5>
+                        <p>"Отличный фильм, на вечер! Захватывающий сюжет, прекрасная игра актеров.
+                            Всем рекомендую...</p>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="review-card">
+                <a href="#profile-2">
+                    <div class="user-info">
+                        <img src="img/page/avatar/test202.jpg" alt="Аватар пользователя 2">
+                        <div class="name-user">
+                            <h4>Максим Ледовский</h4>
+                            <p>Количество рецензий: <span>28</span></p>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h5>Рецензия на фильм: <span>Бесконечное лето</span></h5>
+                        <p>"Неплохой фильм, но местами затянут.
+                            Спецэффекты на высоте, игра актеров не очень впечатлила...</p>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="review-card">
+                <a href="#profile-2">
+                    <div class="user-info">
+                        <img src="img/page/avatar/test203.jpg" alt="Аватар пользователя 2">
+                        <div class="name-user">
+                        <h4>Маримо Морокко</h4>
+                        <p>Количество рецензий: <span>28</span></p>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h5>Рецензия на фильм: <span>Зеленая смерть</span></h5>
+                        <p>"Неплохой фильм, обязательно пересмотрю с друзьями в выхи.
+                            Спецэффекты на высоте, игра актеров не очень впечатлила...</p>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="review-card">
+                <a href="#profile-2">
+                    <div class="user-info">
+                        <img src="img/page/avatar/test204.jpg" alt="Аватар пользователя 2">
+                        <div class="name-user">
+                            <h4>Стелла Гаребян</h4>
+                            <p>Количество рецензий: <span>27</span></p>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h5>Рецензия на фильм: <span>В паутине</span></h5>
+                        <p>"Сюжет этого фильма пропитан атмосферой кинговского триллера, много отсылок есть к королю ужасов...</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="review-card">
+                <a href="#profile-2">
+                    <div class="user-info">
+                        <img src="img/page/avatar/test205.jpg" alt="Аватар пользователя 2">
+                        <div class="name-user">
+                            <h4>Илья Грустный</h4>
+                            <p>Количество рецензий: <span>24</span></p>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h5>Рецензия на фильм: <span>В паутине</span></h5>
+                        <p>"Неплохой фильм, но местами затянут.
+                            Спецэффекты на высоте, игра актеров не очень впечатлила."</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="review-card">
+                <a href="#profile-2">
+                    <div class="user-info">
+                        <img src="img/page/avatar/test206.jpg" alt="Аватар пользователя 2">
+                        <div class="name-user">
+                            <h4>Остин Костин</h4>
+                            <p>Количество рецензий: <span>22</span></p>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h5>Рецензия на фильм: <span>Зеленая смерть</span></h5>
+                        <p>"Неплохой фильм, но местами затянут.
+                            Спецэффекты на высоте, игра актеров не очень впечатлила."</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="review-card">
+                <a href="#profile-2">
+                    <div class="user-info">
+                        <img src="img/page/avatar/test207.jpg" alt="Аватар пользователя 2">
+                        <div class="name-user">
+                            <h4>Лео Касперский</h4>
+                            <p>Количество рецензий: <span>19</span></p>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h5>Рецензия на фильм: <span>Бесконечная смерть</span></h5>
+                        <p>"Неплохой фильм, но местами затянут.
+                            Спецэффекты на высоте, игра актеров не очень впечатлила."</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="review-card">
+                <a href="#profile-2">
+                    <div class="user-info">
+                        <img src="img/page/avatar/test208.jpg" alt="Аватар пользователя 2">
+                        <div class="name-user">
+                            <h4>Юрий Доигралыс</h4>
+                            <p>Количество рецензий: <span>17</span></p>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h5>Рецензия на фильм: <span>Бесконечная смерть</span></h5>
+                        <p>"Неплохой фильм, но местами затянут.
+                            Спецэффекты на высоте, игра актеров не очень впечатлила."</p>
+                    </div>
+                </a>
+            </div>
+    
+        </div>
+    <!-- </div> -->
+
+
+        <section class="pagination">
+            <ul>
+                <li><a href="#">&lt;</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&gt;</a></li>
+            </ul>
+        </section>
+
+        
+      </div>  
+    </main>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="developer-info">
+                <p><a href="#">Backend: [Имя программиста]</a></p>
+
+            </div>
+            <div class="designer-info">
+                <p><a href="#">Frontend: Денис Кузнецов</a></p>
+
+            </div>
+        </div>
+    </footer>
+
+   
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

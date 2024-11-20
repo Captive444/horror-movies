@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Записки старца Питирима</title>
+    <meta name="description"
+        content="Окунитесь в мир ужасов! В нашем Бункере страха  вы найдете огромную коллекцию фильмов ужасов: от классики до новинок.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="icon" href="img/favicon-512.png" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="css/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+
+<body>
+    <header>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Логотип" width="300" height="auto">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="nav-menu">
+                <li class="desktop-hide"><a href="index.html">Главная</a></li>
+        <li><a href="novelty.html">Новинки</a></li>
+        <li><a href="selections.html">Подборки</a></li>
+        <li><a href="review.html">Рецензии</a></li>
+        <li><a href="history.html">Хроники</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <form>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Искать здесь..." id="search-input">
+                    <span class="clear-btn" id="clear-btn" onclick="clearInput()">&times;</span>
+                </div>
+                <button type="submit" title="Поиск"></button>
+                <button type="button" class="filter-btn filter" title="Фильтр"></button>
+            </form>
+            
+            <!-- модальное окно для фильтрации -->
+            <div id="movie-filter-modal" class="modal-content-filter" style="display: none;">
+                <span class="close-modal" id="close-filter">&times;</span>
+                <h2>Расширенный поиск</h2>
+                <form class="movie-filter">
+                    <div class="form-group">
+                        <label for="country">Страна:</label>
+                        <select id="country" name="country">
+                            <option value="">Все</option>
+                            <option value="США">США</option>
+                            <option value="Япония">Япония</option>
+                            <option value="Россия">Россия</option>
+                            <option value="Китай">Китай</option>
+                            <option value="Сингапур">Сингапур</option>
+                            <option value="Австралия">Австралия</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Год:</label>
+                        <input type="number" id="year" name="year" min="1900" max="2024">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Рейтинг:</label>
+                        <input type="number" id="rating" name="rating" min="1" max="10">
+                    </div>
+
+                    <button class="btn" type="submit">Применить</button>
+                </form>
+            </div>
+        </div>
+
+        <button id="login-btn" class="login-btn"><span id="loginText" class="login-text">Войти</span></button>
+        <!-- <span id="loginOpen">Войти</span> -->
+
+
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="novelty.html">Новинки</a></li>
+            <li><a href="selections.html">Подборки</a></li>
+            <li><a href="review.html">Рецензии</a></li>
+            <li><a href="history.html">Хроники</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+
+        <div class="main-content">
+
+     
+            <div class="history">
+                <h1>Записки старца Питирима</h1>
+                <div class="content-wrapper"></div>
+                    <p> В пыльных глубинах библиотеки Кирилло-Белозерского монастыря найдены записи старца Питирима,летописца и собирателя
+                    преданий XVI века. Много лет он странствовал по Руси, от дремучих лесов до ледяных берегов Белого моря, записывая в свой
+                    дневник рассказы о нечистой силе, демонах и древних чудовищах, что таятся на краю цивилизации.<div class="golden-image">
+                        <img src="img/page/test111.jpg" alt="Описание картинки">
+                        <p><em>Кирилло-Белозерский монастырь</em></p>
+                    </div>
+                    
+                    
+                    <span class="first-line">Житие Питирима:Родился Питирим в середине XV века в семье священника в небольшом селе под Новгородом. С юных лет он проявлял интерес к
+                    чтению и письму, и в 12 лет был отдан на обучение в Соловецкий монастырь. Там он провел 20 лет, изучая Священное
+                    Писание, жития святых, но также и древние легенды, сказания о богатырях и чудесах, которые будоражили его воображение.</span>
+                    <span class="first-line">
+                    Когда весть о начитанном и умелом писце дошла до великого князя Василия III, тот призвал Питирима ко двору, где старец
+                    служил летописцем. Но мирская жизнь тяготила монаха, и вскоре он испросил позволения отправиться в странствие по Руси,
+                    чтобы увидеть своими глазами то, о чем читал в древних книгах. Так начались его долгие странствия и сбор жутких
+                    историй...</span>
+                    
+                    <span class="first-line"> "Проклятье Беломорья"
+                    ...(прежний текст о путешествии на Белое море, описании "упырей" и защитных ритуалах)...
+                    ... Уже отходя ко сну у костра, я ощутил леденящий взгляд, пронзающий меня сквозь можжевеловый дым. От берега доносил
+                    шепот волн, похожий на стоны, а сквозь него я различал плеск, медленный и тяжелый, словно нечто огромное двигалось к
+                    берегу.</span>
+                    <span class="first-line">Страх сковал мои члены. Местные, словно чуя неладное, начали бормотать молитвы, крепче сжимая обереги. Внезапно лай
+                    собак перешелв сплошной вой, и из-за скал показалась фигура. Бледная, как луна, с длинными, как водоросли, волосами,
+                    она медленно приближалась. В ее черных глазах горел голод, а на губах блестела темная, словно запекшаяся кровь...</span> 
+                    <span class="first-line">
+                    Питирим пишет о путешествии на побережье Белого моря, где местные жители трепещут перед "упырями морскими".
+                    Он описывает их как бледных мертвецов с черными глазами, чьи тела покрыты водорослями и ракушками.<div class="golden-image">
+                        <img src="img/poster/test11.webp" alt="Описание картинки">
+                        <p><em>Питирим за работой</em></p>
+                    </div>
+                    Они выходят на берег по ночам, чтобы пить кровь выброшенных на берег китов, а иногда нападают и на людей.
+                     Питирим рассказывает о ритуалах, которыми пытаются защититься от "упырей", — костры из можжевельника, обереги из рыбьих костей, особые заговоры.
+                    <span class="first-line"></span>В конце он намекает, что сам столкнулся с этими тварями. Питирим с содроганием вспоминал рассказы поморов о бледных, словно выбеленные солью, тварях с горящими глазами, которые
+                    крались за рыбацкими лодками в тумане. Он сам видел следы их когтей на прибрежных камнях — глубокие борозды, словно от
+                    медвежьих лап, только куда больше и страшнее.</span>
+                    <span class="first-line">
+                    После той поездки Питирим не мог оставаться на месте. Он побывал во многих уголках Руси, от дремучих лесов Заволжья, где
+                    поклоняются древним богам, до холодных земель за Уральскими горами. Там, среди бескрайней тайги, он впервые записал
+                    сказания о Чуди белоглазой, народе, что ушел жить под землю, спасаясь от нашествия врагов. Питирим утверждал, что даже
+                    вел беседу с их царем — мудрым старцем по имени Индрик, который поведал ему тайны загробного мира и предупредил о
+                    грядущих бедах.</span>
+                    
+                    <span class="first-line">Но вернувшись в Москву, Питирим столкнулся с тем, что его рассказы о неведомом, о чудовищах и древних народах, встречали
+                    лишь насмешки. Бояре, привыкшие верить лишь звону монет и шелесту парчи, крутили пальцем у виска, а монахи в кельях
+                    осуждающе качали головами, обвиняя Питирима в ереси и лжесвидетельстве.</span>
+                    
+                    <span class="first-line">Разочарованный и измученный, Питирим удалился в Кирилло-Белозерский монастырь, где и провел остаток своих дней,
+                    переписывая древние летописи и пытаясь разобраться в увиденном и услышанном. Его записи, полные жутких образов и
+                    невероятных историй, долгое время пылились в монастырской библиотеке, пока не попали к нам в руки...</span>
+ </p>
+                </div>
+            </div>
+                
+            </div>
+      
+        
+        <section class="comments-section history-comments">
+            <h3>Комментарии</h3>
+            <div class="comment-form">
+        
+                <form>
+                    <label for="commentAuthor">Ваше имя:</label>
+                    <input type="text" id="commentAuthor" name="commentAuthor" required>
+                    <label for="commentText">Ваш комментарий:</label>
+                    <textarea id="commentText" name="commentText" required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        
+            <div class="comments-list">
+                <div class="comment">
+                    <p><strong>Пользователь 1</strong> <span class="comment-time"> 1 час назад</span></p>
+                    <p>Вречатляющая история.</p>
+                    <button class="reply">Ответить</button>
+                </div>
+
+        </section>
+        </div>
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="developer-info">
+                <p><a href="#">Backend: [Имя программиста]</a></p>
+            </div>
+            <div class="designer-info">
+                <p><a href="#">Frontend: Денис Кузнецов</a></p>
+            </div>
+        </div>
+    </footer>
+
+   
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
